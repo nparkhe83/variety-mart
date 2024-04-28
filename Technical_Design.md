@@ -25,6 +25,7 @@ The Nodejs Server is deployed on Google App Engine with Frontend being served th
 - TypeScript (for strict type-based programming)
 - Jest (For testing)
 - Helmet (For Header Configuration and Security against common web vulnerabilities)
+- Volta (Pin Node & NPM versions)
 
 ##### 1.2 Backend Components (TBA)
 
