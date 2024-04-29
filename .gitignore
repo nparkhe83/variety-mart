@@ -1,6 +1,8 @@
 # Node folders
 node_modules
 
-node_modules
+# Build Folders
+dist
 
+# Mac files
 .DS_Stores
