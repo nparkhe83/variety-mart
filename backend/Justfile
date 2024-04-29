@@ -1,6 +1,0 @@
-create_tsc_config:
-  tsc --init --sourceMap --rootDir src --outDir dist
-
-create_npm_config:
-  npm init -y
-
