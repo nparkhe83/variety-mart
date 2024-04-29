@@ -7,3 +7,6 @@ create_npm_config:
 enforce_story_id:
   cp githooks/commit-msg .git/hooks/
   chmod +x .git/hooks/commit-msg
+
+push_new_branch BRANCH:
+  git push -u origin {{BRANCH}}
