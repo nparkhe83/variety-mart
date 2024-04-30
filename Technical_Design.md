@@ -21,11 +21,13 @@ The Nodejs Server is deployed on Google App Engine with Frontend being served th
 
 - Node.js
 - Express.js
+- Pino for Logging
 - MongoDB
 - TypeScript (for strict type-based programming)
 - Jest (For testing)
 - Helmet (For Header Configuration and Security against common web vulnerabilities)
 - Volta (Pin Node & NPM versions)
+- Honeycomb.io for observability
 
 ##### 1.2 Backend Components (TBA)
 

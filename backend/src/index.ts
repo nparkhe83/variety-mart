@@ -1,15 +1,8 @@
 import express from "express";
+import { logger as pinoLogger } from "./logger_pino";
 import { gracefulShutdownHandler } from "./gracefulShudownHandler";
 
 const app = express();
-
-app.get("/kill", () => {
-  process.kill(process.pid, "SIGINT");
-});
-
-app.get("/terminate", () => {
-  process.kill(process.pid, "SIGTERM");
-});
 
 app.get("/", (req, res) => {
   res.send("Hello from App Engine");
@@ -18,7 +11,7 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 8080;
 
 const server = app.listen(PORT, () => {
-  console.log(`App is listening on port ${PORT}`);
+  pinoLogger.warn("hello");
 });
 
 process.on("SIGINT", handleSignal);

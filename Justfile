@@ -10,3 +10,12 @@ enforce_story_id:
 
 push_new_branch BRANCH:
   git push -u origin {{BRANCH}}
+
+pretty_logs:
+  cd backend/dist && node index.js | npx pino-pretty
+
+develop_backend:
+  cd backend && npm run dev
+
+develop_backend-pretty:
+  cd backend && npm run dev | npx pino-pretty

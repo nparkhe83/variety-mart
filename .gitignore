@@ -6,3 +6,6 @@ dist
 
 # Mac files
 .DS_Stores
+
+# Testing files & folders
+temp
