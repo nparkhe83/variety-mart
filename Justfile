@@ -14,6 +14,9 @@ push_new_branch BRANCH:
 pretty_logs:
   cd backend/dist && node index.js | npx pino-pretty
 
+debugApp:
+  DEBUG=app && cd backend/dist && node index.js | npx pino-pretty
+
 develop_backend:
   cd backend && npm run dev
 

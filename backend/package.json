@@ -15,11 +15,13 @@
     "npm": "10.5.1"
   },
   "devDependencies": {
+    "@types/debug": "^4.1.12",
     "@types/express": "4.17.21",
     "nodemon": ".1.0",
     "typescript": "5.4.5"
   },
   "dependencies": {
+    "debug": "^4.3.4",
     "express": "4.19.2",
     "pino": "9.0.0"
   }
