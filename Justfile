@@ -15,7 +15,7 @@ pretty_logs:
   cd backend/dist && node index.js | npx pino-pretty
 
 debugApp:
-  DEBUG=app && cd backend/dist && node index.js | npx pino-pretty
+  cd backend/dist && DEBUG=APP node index.js | npx pino-pretty
 
 develop_backend:
   cd backend && npm run dev
