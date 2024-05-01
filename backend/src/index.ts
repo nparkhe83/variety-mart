@@ -1,9 +1,8 @@
 import express from "express";
-import { logger as pinoLogger } from "./logger_pino";
+import { logger as pinoLogger } from "./utils/logger_pino";
 import { gracefulShutdownHandler } from "./gracefulShudownHandler";
-import debugConstructor from "debug";
 import requestID from "./request-id";
-const debug = debugConstructor("app");
+import { debug } from "./utils/debug";
 
 const app = express();
 
