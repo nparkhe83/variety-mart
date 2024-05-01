@@ -1,3 +1,6 @@
+default:
+  just --list
+
 create_tsc_config:
   cd backend && tsc --init --sourceMap --rootDir src --outDir dist
 

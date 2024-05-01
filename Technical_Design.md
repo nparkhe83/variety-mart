@@ -31,6 +31,12 @@ The Nodejs Server is deployed on Google App Engine with Frontend being served th
 
 ##### 1.2 Backend Components (TBA)
 
+- Express Server With
+  - Graceful Shutdown
+  - Request ID tracing
+  - Logging using Pino
+  - Unobtrusive Debugging with 'debug' library
+
 #### 2. Frontend (ReactJS)
 
 ##### 2.1 Technologies Used
@@ -83,6 +89,14 @@ The Nodejs Server is deployed on Google App Engine with Frontend being served th
 
 - Logging of backend using Pino logger
 - Monitoring using Google Cloud's Monitoring Solution.
+
+### Tests
+
+Frontend and Backend will be tested using Jest.
+
+Some tests will be included to demonstrate Unit tests, Integration tests and Regression testing.
+
+Github Actions automates testing and deployment.
 
 ### Conclusion
 
