@@ -22,3 +22,9 @@ develop_backend:
 
 develop_backend-pretty:
   cd backend && npm run dev | npx pino-pretty
+
+deploy_backend_GAE:
+  cd backend && gcloud app deploy
+
+open_deploy_GAE:
+  cd backend && gcloud app browse

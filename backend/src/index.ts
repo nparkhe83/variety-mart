@@ -1,12 +1,17 @@
 import express from "express";
-import { logger as pinoLogger } from "./utils/logger_pino";
 import { gracefulShutdownHandler } from "./gracefulShudownHandler";
+import { submitRouter } from "./modules/submitRoute";
 import requestID from "./request-id";
 import { debug } from "./utils/debug";
+import { logger as pinoLogger } from "./utils/logger_pino";
 
 const app = express();
 
 app.use(requestID());
+
+app.use(express.urlencoded({ extended: true }));
+
+app.use(submitRouter);
 
 app.get("/req-id", (req, res, next) => {
   res.send(req.id);
