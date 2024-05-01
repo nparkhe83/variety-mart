@@ -1,0 +1,15 @@
+# Artifacts
+
+.gcloudignore
+.git
+.gitignore
+
+# Build & depencies
+
+node_modules
+dist
+scripts
+
+# Testing files & folders
+
+temp

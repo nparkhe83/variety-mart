@@ -1,0 +1,22 @@
+http://localhost:8080
+
+### 
+
+http://localhost:8080/req-id
+
+###
+
+http://localhost:8080/submit
+
+###
+
+POST http://localhost:8080/submit HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT",
+    "message": "Posted a message"
+}
+
+### 
