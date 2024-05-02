@@ -31,3 +31,6 @@ gcp_deploy_backend_GAE:
 
 gcp_browse_deployed_app:
   cd backend && gcloud app browse
+
+gcp_delete_default_VPC:
+  ./backend/scripts/delete_default_VPC.sh
