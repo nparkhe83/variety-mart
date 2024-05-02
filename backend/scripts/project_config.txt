@@ -1,0 +1,6 @@
+PROJECT_ID=variety-mart-1
+BUCKET_ID=
+NETWORK_NAME=
+SUBNET_NAME=
+REGION=asia-south1
+ZONE=asia-south1-a

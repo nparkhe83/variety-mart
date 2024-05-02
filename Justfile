@@ -34,3 +34,6 @@ gcp_browse_deployed_app:
 
 gcp_delete_default_VPC:
   ./backend/scripts/delete_default_VPC.sh
+
+gcp_save_config:
+  ./backend/scripts/save_gcloud_config.sh
