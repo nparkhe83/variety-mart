@@ -24,7 +24,12 @@ EOF
 
 source $(dirname $0)/utils.sh
 
-file_path=$(dirname $0)/"project_config.txt"
+# get absolute path of the script
+script_dir=$(dirname ${0:a})
+parent_dir=$(dirname $script_dir)       #'backend'
+project_root_dir=$(dirname $parent_dir) #'variety-mart'
+
+file_path=$project_root_dir/project_config.txt
 
 checkForConfigFile
 
