@@ -42,6 +42,10 @@ gcp_delete_default_VPC:
 
 gcp_save_config:
   ./backend/scripts/save_gcloud_config.sh
+
+gcp_create_terraform_SA:
+  cd terraform-config && ./scripts/create-tf-SA.sh
+
 gcp_download_SA_key SA:
   echo $PROJECT_ID
   gcloud iam service-accounts keys create {{SA}}.json --iam-account={{SA}}@$PROJECT_ID.iam.gserviceaccount.com
